@@ -1,6 +1,7 @@
 .header {
     display      : flex;
     margin-bottom: 90px;
+    padding: 46px 150px 0;
 }
 
 .header__logo-images {
@@ -53,6 +54,10 @@
     gap           : 10px;
 }
 
+.header__navigation{
+    width: 639px;
+}
+
 .header__navigation-list li {
     all        : unset;
     color      : #E4E5EA;
@@ -60,10 +65,12 @@
     font-style : normal;
     font-weight: 500;
     line-height: normal;
+    z-index: 1;
 }
 
 .header__logo-info {
     color      : #E4E5EA;
+    font-family: 'Montserrat';
     font-size  : 10px;
     font-style : normal;
     font-weight: 400;
