@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/test-job/static/css/main.24811136.css",
+    "main.js": "/test-job/static/js/main.7fce294f.js",
+    "static/media/Inter-Medium.otf": "/test-job/static/media/Inter-Medium.16eda82a3c37a6edda09.otf",
+    "static/media/Inter-Black.otf": "/test-job/static/media/Inter-Black.b2a2b192860f79c0b89c.otf",
+    "static/media/Inter-Regular.otf": "/test-job/static/media/Inter-Regular.a416f4674fad5f019461.otf",
+    "static/media/Montserrat-Light.ttf": "/test-job/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
+    "static/media/Montserrat-Regular.ttf": "/test-job/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/Inter-Medium.woff": "/test-job/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/test-job/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/test-job/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/test-job/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "/test-job/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "/test-job/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/logo2.svg": "/test-job/static/media/logo2.2992c5c029cea1e62c475b057bfa7e3a.svg",
+    "static/media/whats-up.svg": "/test-job/static/media/whats-up.e9005a169c6747d643f71e35a65597a1.svg",
+    "static/media/viber.svg": "/test-job/static/media/viber.e3e17df7091d7c779a573abad46e09b9.svg",
+    "static/media/red-ball-small.svg": "/test-job/static/media/red-ball-small.45fc37c6e925f84be930bb77dbda3d5f.svg",
+    "static/media/purple-ball.svg": "/test-job/static/media/purple-ball.9a196dbd8b22a781149b884e0ed35c35.svg",
+    "static/media/red-ball-big.svg": "/test-job/static/media/red-ball-big.b26dc63b7559018f699b3280b5782414.svg",
+    "static/media/logo1.svg": "/test-job/static/media/logo1.3079697a60a58408719ea9497f5d5f6b.svg",
+    "index.html": "/test-job/index.html",
+    "static/media/telegram.svg": "/test-job/static/media/telegram.62b5d73494d078f686d91089d6b90e27.svg",
+    "main.24811136.css.map": "/test-job/static/css/main.24811136.css.map",
+    "main.7fce294f.js.map": "/test-job/static/js/main.7fce294f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24811136.css",
+    "static/js/main.7fce294f.js"
+  ]
+}
