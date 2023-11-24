@@ -4,6 +4,7 @@ import viber from "../../images/viber.svg";
 import whatsUp from "../../images/whats-up.svg";
 
 function Footer() {
+  const width_768 = window.innerWidth > 768
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -16,7 +17,7 @@ function Footer() {
         </div>
         <div className="footer__menu">
           <p className="footer__title">Меню</p>
-          <div className="footer__menu-container">
+          {width_768 && <div className="footer__menu-container">
             <p className="footer__menu-text">Расчёт стоимости</p>
             <p className="footer__menu-text">Кейсы</p>
             <p className="footer__menu-text">Услуги</p>
@@ -27,7 +28,19 @@ function Footer() {
             <p className="footer__menu-text">Блог на Youtube</p>
             <p className="footer__menu-text">Наши клиенты</p>
             <p className="footer__menu-text">Вопрос / Ответ</p>
-          </div>
+          </div>}
+          {!width_768 && <div className="footer__menu-container">
+            <p className="footer__menu-text">Расчёт стоимости</p>
+            <p className="footer__menu-text">Благодарность клиентов</p>
+            <p className="footer__menu-text">Услуги</p>
+            <p className="footer__menu-text">Кейсы</p>
+            <p className="footer__menu-text">Виджеты</p>
+            <p className="footer__menu-text">Сертификаты</p>
+            <p className="footer__menu-text">Интеграции</p>
+            <p className="footer__menu-text">Блог на Youtube</p>
+            <p className="footer__menu-text">Наши клиенты</p>
+            <p className="footer__menu-text">Вопрос / Ответ</p>
+          </div>}
         </div>
         <div className="footer__contacts">
           <p className="footer__title-contacts">Контакты</p>

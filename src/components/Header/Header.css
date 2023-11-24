@@ -1,7 +1,15 @@
 .header {
     display      : flex;
     margin-bottom: 90px;
-    padding: 46px 150px 0;
+    padding      : 46px 150px 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header {
+        padding      : 20px 16px;
+        margin-bottom: 0;
+        background-color: #0E1014;
+    }
 }
 
 .header__logo-images {
@@ -17,6 +25,14 @@
     padding-top : 15px;
     box-sizing  : border-box;
     margin-right: 137px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header__navigation-list {
+        gap         : 16px;
+        margin-right: 0;
+        padding     : 0;
+    }
 }
 
 .header__logo-1 {
@@ -41,11 +57,25 @@
     line-height : normal;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header__number {
+        display: none;
+    }
+}
+
+
 .header__links-container {
     display    : flex;
     gap        : 30px;
     padding-top: 14px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header__links-container {
+        display: none;
+    }
+}
+
 
 .header__logo-container {
     margin-right  : 27px;
@@ -54,8 +84,18 @@
     gap           : 10px;
 }
 
-.header__navigation{
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header__logo-container {
+        display: none;
+    }
+}
+
+.header__navigation {
     width: 639px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header__navigation {}
 }
 
 .header__navigation-list li {
@@ -65,7 +105,14 @@
     font-style : normal;
     font-weight: 500;
     line-height: normal;
-    z-index: 1;
+    z-index    : 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header__navigation-list li {
+        font-size     : 12px;
+        text-transform: uppercase;
+    }
 }
 
 .header__logo-info {

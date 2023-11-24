@@ -1,13 +1,59 @@
 .landing {
     display        : flex;
     justify-content: space-between;
-    padding: 0 149px 0px 145px;
+    padding        : 0 149px 0px 145px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing {
+        padding       : 40px 34px 59px 15px;
+        flex-direction: column;
+        position      : relative;
+        overflow      : hidden;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .landing::before {
+        content      : "";
+        position     : absolute;
+        top          : 107px;
+        right        : -197px;
+        width        : 259px;
+        height       : 259px;
+        border-radius: 259px;
+        opacity      : 0.5;
+        background   : #833AB4;
+        filter       : blur(196px);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .landing::after {
+        content      : "";
+        position     : absolute;
+        bottom       : -6px;
+        left         : -55px;
+        width        : 311px;
+        height       : 311px;
+        border-radius: 311px;
+        opacity      : 0.5;
+        background   : #961A1A;
+        filter       : blur(196px);
+    }
 }
 
 .landing__left-container {
     display       : flex;
     flex-direction: column;
     gap           : 30px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__left-container {
+        gap          : 15px;
+        margin-bottom: 45px;
+    }
 }
 
 .landing__title-container {
@@ -22,6 +68,12 @@
     font-weight: 400;
     line-height: normal;
     width      : 362px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__title {
+        font-size: 36px;
+    }
 }
 
 .landing__subtitle {
@@ -42,6 +94,13 @@
     color                  : transparent;
 }
 
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__subtitle-text {
+        font-size: 36px;
+    }
+}
+
+
 .landing__description {
     color      : #E4E5EA;
     font-family: "Montserrat";
@@ -55,7 +114,13 @@
 .landing__right-container {
     display       : flex;
     flex-direction: column;
-    padding-top: 18px;
+    padding-top   : 18px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__right-container {
+        padding: 0;
+    }
 }
 
 .landing__right-subtitle {
@@ -72,6 +137,14 @@
     align-self     : end;
 }
 
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__right-subtitle {
+        text-align   : left;
+        width        : 272px;
+        margin-bottom: 20px;
+    }
+}
+
 .landing__right-subtitle-text {
     display        : inline;
     background     : var(--gradient, linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%));
@@ -84,22 +157,45 @@
     text-transform : uppercase;
 }
 
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__right-subtitle-text {
+        letter-spacing: normal;
+        text-transform: lowercase;
+    }
+}
+
 .landing__info-container {
     display              : grid;
-    grid-template-columns: 2fr 135px;
+    grid-template-columns: 2fr 130px;
     gap                  : 31px 32px;
-    margin-bottom        : 62px;
+    margin-bottom        : 60px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__info-container {
+        margin-bottom: 0;
+        gap          : 14px 0;
+        padding-left : 15px;
+    }
 }
 
 .landing__container-text {
-    width         : 135px;
+    width         : 140px;
     display       : flex;
     flex-direction: column;
     gap           : 7px;
 }
 
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__container-text {
+        display: inline-block;
+        width: auto;
+    }
+}
+
 .landing__text-title {
     color         : #E4E5EA;
+    font-family   : 'Montserrat';
     text-align    : right;
     font-size     : 18px;
     font-style    : normal;
@@ -107,7 +203,32 @@
     line-height   : normal;
     letter-spacing: 0.9px;
     text-transform: uppercase;
+    position      : relative;
 }
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__text-title {
+        font-size     : 13px;
+        font-weight   : 400;
+        letter-spacing: 0.65px;
+        text-align    : left;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__text-title:before {
+        content   : '';
+        position  : absolute;
+        left      : -15px;
+        top       : 50%;
+        width     : 10px;
+        height    : 1px;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        transform : translateY(-50%);
+    }
+}
+
 
 .landing__text {
     color      : #E4E5EA;
@@ -118,6 +239,13 @@
     font-weight: 400;
     line-height: normal;
 }
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__text {
+        display: none;
+    }
+}
+
 
 .landing__btn-get-help {
     all          : unset;
@@ -132,6 +260,12 @@
     line-height  : normal;
     align-self   : flex-end;
     margin-bottom: 69px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .landing__btn-get-help {
+        display: none;
+    }
 }
 
 .landing__btn-get-help:hover {

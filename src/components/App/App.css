@@ -18,6 +18,12 @@
   filter       : blur(196px);
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .app::before {
+    all: unset;
+  }
+}
+
 .app::after {
   content      : "";
   position     : absolute;
@@ -31,6 +37,12 @@
   filter       : blur(196px);
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .app::after {
+    all: unset;
+  }
+}
+
 .app__red-ball-big {
   position       : absolute;
   top            : 72px;
@@ -38,6 +50,21 @@
   fill           : radial-gradient(82.3% 82.3% at 27.25% 26.5%, rgba(255, 208, 208, 0.54) 0%, rgba(212, 93, 93, 0.26) 59.67%, rgba(167, 49, 49, 0.25) 78.59%, rgba(130, 25, 25, 0.25) 100%);
   filter         : drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
   backdrop-filter: blur(2px);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .app__red-ball-big {
+    position       : absolute;
+    left           : 851px;
+    top            : -2px;
+    fill           : radial-gradient(82.3% 82.3% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.21) 78.59%, rgba(86, 24, 128, 0.23) 100%);
+    filter         : drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+    backdrop-filter: blur(2px);
+    top     : 470px;
+    left    : 29px;
+    width: 43px;
+    height: 43px;
+  }
 }
 
 .app__red-ball-small {
@@ -56,4 +83,14 @@
   fill           : radial-gradient(82.3% 82.3% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.21) 78.59%, rgba(86, 24, 128, 0.23) 100%);
   filter         : drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
   backdrop-filter: blur(2px);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .app__purple-ball {
+    position: absolute;
+    top     : 300px;
+    left    : 300px;
+    width: 40px;
+    height: 40px;
+  }
 }

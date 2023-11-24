@@ -5,6 +5,7 @@ import telegram from "../../images/telegram.svg";
 import viber from "../../images/viber.svg";
 import whatsUp from "../../images/whats-up.svg";
 function Header() {
+  const width__768 = window.innerWidth > 768;
   return (
     <header className="header">
       <div className="header__logo-container">
@@ -22,7 +23,7 @@ function Header() {
           <li>Виджеты</li>
           <li>Интеграции</li>
           <li>Кейсы</li>
-          <li>Сертификаты</li>
+          <li>{width__768 && "Сертификаты"}</li>
         </ul>
       </nav>
       <span className="header__number">+7 555 555-55-55</span>
